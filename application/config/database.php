@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-/* FILL THESE AREA */
+/* FILL THESE AREAS */
 $db['default']['hostname'] = '';
 $db['default']['username'] = '';
 $db['default']['password'] = '';

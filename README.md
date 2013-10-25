@@ -13,8 +13,8 @@ Online Reviewer for Standardized Exams (UPCAT, ACET, DLSUCET, etc.)
 + Kiefer Yap
 
 ### Specs
-+ __Front-end__: Twitter Bootstrap
-+ __Back-end__: CodeIgniter
++ __Front-end__: Twitter Bootstrap 3
++ __Back-end__: CodeIgniter 2.1
 
 ### How to install
 1.  Install [WAMP][1], [XAMPP][2], or [Apache][3] on your local machine.
@@ -31,7 +31,7 @@ Online Reviewer for Standardized Exams (UPCAT, ACET, DLSUCET, etc.)
     * clone this git using:
         `git clone https://github.com/itsacezon/quanta.git ./<name of created folder>`
 4.  Configure the database in `./applications/config/database.php`
-5.  Update database by running these in order: 
+5.  Update database by running these in order:
 	* `useranswerssupport.sql`
 	* `newscripts.sql`
 

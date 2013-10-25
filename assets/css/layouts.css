@@ -1,0 +1,544 @@
+* {
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* @font-face weight guidelines
+100    Extra Light or Ultra Light
+200    Light or Thin
+300    Book or Demi
+400    Normal or Regular
+500    Medium
+600    Semibold, Demibold
+700    Bold
+800    Black, Extra Bold or Heavy
+900    Extra Black, Fat, Poster or Ultra Black
+*/
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url('../fonts/TisaOT.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url('../fonts/TisaOT-Ita.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url('../fonts/TisaOT-Medi.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url('../fonts/TisaOT-MediIta.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url('../fonts/TisaOT-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TisaOT';
+    src: url('../fonts/TisaOT-BoldIta.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/AdelleSans-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/AdelleSans-Italic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/AdelleSans-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/AdelleSans-SemiBoldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/AdelleSans-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('../fonts/AdelleSans-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* BOOTSTRAP CUSTOMIZATIONS */
+.btn {
+    font-family: 'AdelleSans';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 1;
+}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+    background-color: #353a3d;
+    border-color: #353a3d;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #fff;
+  border-color: #cccccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+.btn-primary {
+    background: #2e9fff;
+    border-color: #2e9fff;
+}
+
+.caret {
+    margin-left: 10px;
+}
+
+.container {
+    width: 960px;
+    min-height:100%;
+}
+
+.container.message {
+    min-height: 0;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus  {
+  background-image: none;
+  background-color: #2e9fff;
+}
+
+.form-control
+{
+    font-size: 16px;
+    height: 40px;
+}
+
+.footer {
+    height: 80px;
+    margin-top: -40px;
+}
+
+.jumbotron {
+    height: 64%;
+    background-color: #fff; /* #546673  #353a3d */
+    border-radius: 0px;
+    color: #353a3d;
+    position: relative;
+}
+.jumbotron .container {
+    z-index: 100;
+    position: relative;
+}
+.jumbotron h1 {
+    font-family: 'AdelleSans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    margin: 36px 0;
+}
+.jumbotron h2 {
+    width: 70%;
+    font-family: 'TisaOT';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 24px 0 36px;
+}
+.jumbotron h2>a {
+    text-decoration: underline;
+}
+.jumbotron .bg {
+    background: url('../img/bg-header.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: .8;
+}
+.jumbotron ~ .last {
+    height: 50%;
+    color: #353a3d;
+    text-align: center;
+}
+
+.navbar {
+    background-color: white;
+    margin: 0;
+    padding-top: 15px;
+}
+.navbar .container {
+    position: relative;
+}
+.navbar>.container
+.navbar-brand {
+    padding: 0;
+    margin-left: 0;
+}
+
+.navbar a {
+    color: #555;
+    font-size: 16px;
+}
+.navbar .nav {
+    margin-left: 40px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+}
+.navbar .nav>li {
+    font-family: "AdelleSans";
+    font-weight: 400;
+    float: left;
+    margin-right: 20px;
+}
+.navbar .nav>li a {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.navbar .nav-button .btn {
+    font-family: "AdelleSans";
+    font-weight: 400;
+    font-style: italic;
+    border-radius: 3px;
+    background: #2e9fff;
+    color: #fff;
+    line-height: 1;
+}
+.navbar .nav-button .btn:hover,
+.navbar .nav-button .btn:focus,
+.navbar .nav-button .btn:active,
+.navbar .nav-button .btn.active {
+    background-color: #353a3d;
+    border-color: #353a3d;
+}
+/* END BOOTSTRAP CUSTOMIZATIONS */
+
+/* FONT AWESOME CHANGES */
+i.acc
+{
+    color: #999;
+    padding-right: 6px;
+}
+.icon-16x {
+    color: #2e9fff;
+    font-size: 16em;
+}
+.icon-16x.icon-border {
+    border-width: 16px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+}
+.icon-24x {
+    color: #2e9fff;
+    font-size: 24em;
+}
+.icon-24x.icon-border {
+    border-width: 24px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;
+}
+/* END FONT AWESOME CHANGES */
+
+a {
+    color: #2e9fff;
+}
+
+body, input {
+    font-family: 'TisaOT';
+    font-weight: 400;
+    font-size: 16px;
+    color: #575d64;
+}
+
+body h1 {
+    font-family: 'AdelleSans';
+    font-weight: 600;
+    font-size: 38px;
+    margin: 24px 0;
+}
+
+body h2 {
+    font-family: 'AdelleSans';
+    font-weight: 400;
+    font-size: 28px;
+}
+
+body h3 {
+    font-family: 'AdelleSans';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+body h4 {
+    font-family: 'TisaOT';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    position: relative
+    top:0;
+    width:100%;
+    height:100%;
+    margin: -15px;
+    left: 10%;
+}
+
+em {
+    color: #999999;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+legend {
+    padding-bottom: 12px;
+}
+
+.dashb-section + .dashb-section {
+  margin-top: 80px;
+}
+
+.disabled {
+    color: #999;
+}
+
+.dd-item>a {
+    text-transform: none;
+}
+
+.featurette-divider {
+    margin-top: 65px;
+}
+.featurette {
+    padding-top: 120px;
+    overflow: hidden;
+}
+.featurette-image {
+    margin-top: -120px;
+}
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+.featurette-heading {
+    font-family: 'AdelleSans';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    margin-top: -48px;
+}
+
+.footer {
+    background-color: #353a3d;
+    border-top: 1px solid #ddd;
+    color: white;
+    margin-top: 30px;
+    padding: 29px 15px 30px 15px;
+}
+.footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-login {
+    font-weight: 500;
+    width: 500px;
+}
+
+.input-append .add-on{
+    margin: 1.5% 89%;
+    position:absolute;
+    z-index:5;
+}
+
+div .input-group {
+    padding-bottom: 12px;
+}
+
+.sidebar.affix {
+  position: static;
+}
+.sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 3px;
+}
+.sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #2e9fff;
+  background-color: transparent;
+  border-right: 2px solid #2e9fff;
+}
+.sidebar .nav .nav {
+  display: none;
+  margin-bottom: 8px;
+}
+.sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Responsive variations
+-------------------------------------------------- */
+/* Hide code snippets on mobile devices */
+@media screen and (max-width: 480px) {
+  .highlight {
+    display: none;
+  }
+
+  .featurette-image {
+    font-size: 6em;
+    }
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Tablets and up */
+@media screen and (min-width: 768px) {
+  /* Show the docs nav */
+  .sidebar {
+    display: block;
+  }
+  /* Show the hidden subnavs when space allows it */
+  .sidebar .nav > .active > ul {
+    display: block;
+  }
+
+  .navbar-top-example .navbar-fixed-top,
+  .navbar-bottom-example .navbar-fixed-bottom {
+    position: absolute;
+  }
+
+}
+
+/* Tablets/desktops and up */
+@media screen and (min-width: 992px) {
+
+  /* Widen the fixed sidebar */
+  .sidebar.affix,
+  .sidebar.affix-bottom {
+    width: 210px;
+  }
+  .sidebar.affix {
+    position: fixed; /* Undo the static from mobile-first approach */
+    top: 80px;
+  }
+  .sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile-first approach */
+  }
+  .sidebar.affix-bottom .sidenav,
+  .sidebar.affix .sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Large desktops and up */
+@media screen and (min-width: 1200px) {
+
+  /* Widen the fixed sidebar again */
+  .sidebar.affix-bottom,
+  .sidebar.affix {
+    width: 210px;
+  }
+
+}

@@ -1,6 +1,16 @@
 # quanta
-Online Reviewer for Standardized Exams (UPCAT, ACET, DLSUCET, etc.)
+Online reviewer for college entrance tests in the Philippines (UPCAT, ACET, DLSUCET, etc.)
 
+### To do:
+#### Admin
++ Finish ManageQuestions module
++ Add a WYSIWYG editor in Announcements module
++ More features for the ManageUsers module
+
+#### User
++ More detailed statistics page
+
+-----
 
 ### Quanta?
 (from [Wikipedia][0]) In physics, a __quantum__ (plural: __quanta__) is the minimum amount of any physical entity involved in an interaction.
